@@ -46,7 +46,7 @@ export default function FormDiv() {
           <div className="col-md-6">
             <div className="form-group">
               <input
-                type="text"
+                type="text" placeholder='Type Here For Upper Text'
                 className="form-control"
                 id="topText"
                 name='topText'
@@ -58,7 +58,7 @@ export default function FormDiv() {
           <div className="col-md-6">
             <div className="form-group">
               <input
-                type="text"
+                type="text" placeholder='Type Here For Lower Text'
                 className="form-control"
                 id="bottomText"
                 name='bottomText'
