@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.meme--image{
+  max-width: 100%;
+}
+
+/* Assuming you have a CSS file for your component or you can add this in a <style> tag within your JSX */
+
+.meme {
+  position: relative;
+  /* Ensures the container acts as a positioning reference for absolute elements */
+  max-width: 100%;
+  /* Optional: Ensure the image doesn't overflow its container */
+}
+
+.meme--text {
+  position: absolute;
+  left: 50%;
+  /* Horizontal center */
+  transform: translateX(-50%);
+  /* Center the text horizontally */
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
+  /* Optional: Add a text shadow for better readability */
+  pointer-events: none;
+  /* Make sure the text doesn't interfere with click events */
+}
+
+.meme--text.top {
+  top: 20px;
+  /* Adjust the distance from the top of the image */
+}
+
+.meme--text.bottom {
+  bottom: 20px;
+  /* Adjust the distance from the bottom of the image */
+}
